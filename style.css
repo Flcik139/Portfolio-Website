@@ -1,0 +1,163 @@
+/*THIS CODE APPLIES TO THE WHOLE DOCUMENT!.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+/*SCROLL BEHAVIOUR OF THE WHOLE DOCUMENT.*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*HEADER.*/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+/*THE OVERLAY (BACKGROUND).*/
+.overlay {
+    /*HEIGHT & WIDTH DEPENDS ON HOW YOU WANT TO REVEAL THE OVERLAY.*/   
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  /*POSITION THE CONTENT INSIDE THE OVERLAY .*/
+  .overlay-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 0px;
+    position: relative;
+    top: 25%; 
+    width: 100%;
+    text-align: center; 
+    margin-top: 30px;
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color.*/
+  .overlay a:hover, .overlay a:focus, form, .form, .contact-information {
+    color: #f1f1f1;
+  }
+  
+  /*POSITION THE CLOSE BUTTON (TOP RIGHT CORNER).*/
+  .overlay .closebtn {
+    position: top;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .g-recaptcha {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*WHEN THE HEIGHT OF THE SCREEN IS LESS THAN 450 PIXELS, CHANGE THE FONT-SIZE OF THE LINKS AND POSITION THE CLOSE BUTTON AGAIN, SO THEY DON'T OVERLAP.*/
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+/*HOME.*/
+#home body {
+    background-color: #252627;
+}
+    /*NAVIGATION BAR.*/
+    .top-bar, #nav-bar, #work {
+        background-color: #181818;
+    }
+    /*TOP-BAR LINKS.*/
+    li {
+        list-style: none;
+        margin-left: 30px;
+    }
+
+    /*LINKS.*/
+    a {
+        text-decoration: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        position: relative;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+
+    /*NAV UL, MAIN-CONTENT & WORK CONTAINERS.*/
+    nav ul, .main-content, .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main-content {
+        align-items: center;
+    }
+    h2 {
+        color: #fff;
+        font-size: 3rem;
+        cursor: context-menu;
+    }
+    h3 {
+        color: #363636;
+        font-size: 5rem;
+        cursor: context-menu;
+    }
+    .contact-me a {
+        color: red;
+        text-decoration: powderblue;
+        border-style: double;
+        border-color: red;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+      }
+      
+      .contact-me a:hover {
+        color: whitesmoke;
+        background-color: red;
+        padding: 5px 10px 5px 10px;
+      }
+      
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer {
+    background-color: #181818;
+}

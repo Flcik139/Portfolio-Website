@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<!--THIS HTML DOCUMENT CONTAINS THE HOME PAGE, ABOUT ME PAGE & MY WORK PAGE.-->
+<html id="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE RECAPTCHA LINK.-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--LINK CSS FILE.-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.8.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.8.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio Magayana</title>
+</head>
+
+<!--HOME PAGE BODY.-->
+<body class="home">
+    <!--THE TOP-BAR IS THE DIV BOX THAT CONTAINS THE LOGO AND LINKS.-->
+    <div class="top-bar">
+        <header>
+            <div class="logo">
+                <h1 style="color: #707070;">Luyolo</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home" style="color: #707070;">HOME</a></li>
+                    <li><a href="#nav-bar" style="color: #707070;">ABOUT ME</a></li>
+                    <li><a href="#work" style="color: #707070;">MY WORK</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <br><br><br><br><br>
+
+     <!--MAIN CONTENT INFORMATION.-->
+     <div class="main-content">
+        <div class="text">
+            <h2>
+                Hello World!<br>
+                My name is<br>
+                <strong style="color: red;">Luyolo Magayana</strong>,<br>
+                Software Engineer.
+            </h2>
+            <p style="color: rgb(112, 112, 112)">HTML / CSS / JavaScript</p>
+            <br>
+            <div class="contact-me" id="contact-me">
+                <!-- USE ANY ELEMENT TO OPEN/SHOW THE OVERLAY NAVIGATION MENU.-->
+                <span onclick="openNav()"><a href="#contact">CONTACT ME</a></span>
+            </div>
+        </div>
+    
+        <div class="profile-image">
+            <img src="images/Luyolo Magayana (Flick).jpg" alt="Profile photo" width="350px" height="450px">
+        </div>
+    </div>
+
+    <!--THE FULL SCREEN OVERLAY.-->
+    <div id="Contact-Me" class="overlay">
+        <!--OVERLAY CONTENT INFORMATION.-->
+        <div class="overlay-content">
+            <div class="form">
+                <div class="form-small">
+                    <h4 class="form">The form below is a means of communication platform where you can<br>
+                        give feedback or contact me when wishing to do so. Please fill in the form and<br>
+                        give your feedback in the space provided.</h4><br>
+                        <!--THE FORMMETHOD ATTRIBUTE DEFINES THE HTTP METHOD FORM-DATA TO THE ACTION URL.-->
+                        <form id="form" action="https://formspree.io/FORM_ID" method="POST">
+                            <label>
+                                Name & Surname:<br>
+                                <input type="text" name="name" cols="70" style="text-align: center;"><br><br>
+                            </label>
+
+                            <label>
+                                Your Email:<br>
+                                <input type="email" name="_replyto" style="text-align: center;" required><br><br>
+                            </label>
+
+                            <label>
+                                Message:<br>
+                                <textarea name="message" cols="70" rows="8" style="text-align: center;"></textarea><br><br>
+                            </label>
+
+                            <div class="g-recaptcha" data-sitekey="6Lf9wdcUAAAAANneaN_SCIpsjMdoz2wsbq7DD3yz"></div>
+                            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+                            <br>
+                            <input type="submit" value="Send">
+                            </form>
+                        
+                </div> 
+            </div>
+
+            <div class="contact-information">
+                <h1>CONTACT DETAILS:</h1><br><br>
+
+                <p>I'm reachable on a wide range of social media platforms.<br>
+                Below are a few ways you can reach me besides the form on the<br>
+                left-hand side.</p><br>
+
+                <br><br><br>
+
+                <div class="links">
+                    <a href="https://www.facebook.com/lmagayana" target="blank"><img src="images/facebook.png" alt="Facebook Link" width="50px" height="50px"></a>
+                    <a href="https://twitter.com/flick4bfmv" target="blank"><img src="images/twitter.png" alt="Twitter Link" width="5
+                        0px" height="50px"></a>
+                </div>
+
+                <br>
+
+                <div class="details">
+                    <h4>
+                        <strong>Email</strong>: luyolo.bfmv@gmail.com<br>
+                        <strong>Contact Number</strong>: 079 2118 431<br>
+                    </h4>
+                </div>
+            </div>
+
+            <!--BUTTON TO CLOSE OVERLAY.-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+    </div>
+
+    <script>
+        /* OPEN WHEN SOMEONE CLICKS ON THE SPAN ELEMENT.*/
+        function openNav() {
+        document.getElementById("Contact-Me").style.height = "100%";
+        }
+
+        /* CLOSE WHEN SOMEONE CLICKS ON THE "X" SYMBOL INSIDE THE OVERLAY.*/
+        function closeNav() {
+        document.getElementById("Contact-Me").style.height = "0%";
+        }
+    </script>
+    
+    <br><br><br><br><br><br><br><br>
+
+    <div id="nav-bar">
+        <header>
+            <div class="logo">
+                <h1 style="color: #181818;">Luyolo</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home" style="color: #707070;">HOME</a></li>
+                    <li><a href="#work" style="color: #707070;">MY WORK</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!--ABOUT ME CONTENT INFORMATON.-->
+    <h3 id="about-me">About Me</h3>
+    <br><br>
+    <div class="about">
+        <!--THIS DIV BOX CONTAINS THE IMAGE, BIO & SKILLS.-->
+            <div class="picture">
+                <br>
+                <p style="text-align: center; color: #707070;">
+                    <img src="images/Saskia and I.jpg" alt="About ME Photo" width="400px" height="200px"><br>
+                    <br>
+                    <strong>BIO</strong><br>
+                    My name is Luyolo Magayana, and I'm a Software Engineer Intern at<br>
+                    Younglings. My ultimate goal is to become a Senior Developer.<br>
+                    <br>
+                    <strong>SKILLS</strong><br>
+                    I have proficient IT computer skills, competent in making use of the MS<br>
+                    Office Suite as well as Code Editors. I have excellent teamwork skills<br>
+                    developed through working in groups throughout high school studies.<br>
+                </p>
+            </div>
+
+        <!--THE DIV BOX BELOW CONTAINS EXPERIENCE, ACCOMPLISHMENTS, EDUCATION, INTERESTS AND PROFESSIONAL GOALS & OBJECTIVES.-->
+        <div class="about-me-info">
+            <p style="text-align: center; color: #707070;">
+                <strong>EXPERIENCE</strong><br>
+                I learnt the basics of web development back in high school; we were only<br>
+                taught HTML. When I got to CapaCiTi I was then introduced to CSS and<br>
+                JavaScript, this is where I started going deeper and deeper into coding. <br>
+                <br>
+                <strong>ACCOMPLISHMENTS</strong><br>
+                My biggest achievement in life was obtaining my National Senior<br>
+                Certificate, having to be the first man in my family to obtain the Qualification.<br>
+                <br>
+                <strong>EDUCATION</strong><br>
+                I obtained my National Senior Certificate (NSC 2015) at Gardens<br>
+                Commercial High School, with career subjects Business Studies,<br>
+                Economics and Computer Application Technology, this is where I learnt<br>
+                the basics of web development. <br>
+                <br>
+                <strong>INTERESTS</strong><br>
+                I love creating new things, having the power to develop something totally<br>
+                new and out of this world. This is the mere reason why I went into Software Engineering. <br>
+                <br>   
+                <strong>PROFESSIONAL GOALS & OBJECTIVES</strong><br>
+                My biggest dream is to work my way up the IT ladder and become a Senior<br>
+                Developer. I want to oversee all software developed in the company<br>
+                and have the last say when it comes to launching new software products.<br>
+            </p>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div id="work">
+        <header>
+            <div class="logo">
+                <h1 style="color: #181818;">Luyolo</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home" style="color: #707070;">HOME</a></li>
+                    <li><a href="#nav-bar" style="color: #707070;">ABOUT ME</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+     <!--MY WORK INFORMATION.-->
+     <h3>My Work</h3>
+     <br><br><br><br><br>
+     <div class="work">
+         <!--MZAMOMTSHA PRIMARY SCHOOL PROJECT.-->
+         <div class="work-design" style="text-align: center; color: #707070;">
+             <p>
+                 <h4>MZAMOMTSHA PRIMARY SCHOOL PROJECT</h4><br>
+                 <a href="https://dynamic-mzamomtsha-developers.netlify.com/" target="blank"><img src="images/Mzamomtsha Website.png" alt="Mzamomtsha Website" width="350px" height="200px"></a><br>
+                 <br>
+                 This was our very first website that we developed in our Dev Teams @<br>
+                 CapaCiTi. As I was the overall team leader of our Team, I had to oversee<br>
+                 all code written and appoint member to tasks of their expertise. I made all<br>
+                 last minute changes and uploaded it onto the Internet.
+             </p>
+         </div>
+
+         <!--PORTFOLIO MAGAYANA.-->
+         <div class="work-design2" style="text-align: center; color: #707070;">
+            <p>
+                <h4>PORTFOLIO MAGAYANA</h4><br>
+                <a href="#home"><img src="images/Portfolio Magayana.jpg" alt="Mzamomtsha Website" width="370px" height="200px"></a><br>
+                <br>
+                This is my actual online portfolio. If you click on the image it will navigate you straight<br>
+                to the Home Page. It is my second project so far. I will upload all my work onto<br>
+                this website for storage and for people to see the kind of work I've done from when I started<br>
+                coding till present.
+            </p>
+        </div>
+     </div>
+
+    <br><br><br><br><br><br><br>
+
+     <!--FOOTER INFORMATION.-->
+    <footer>
+        <div class="footer" style="text-align: center; color: #707070;">
+            <!--LEFT-HAND DIV.-->
+            <div class="footer-left-div">
+                <div class="copyright-bar">
+                    <strong>
+                    Luyolo Magayana Portfolio Website<br>               
+                    Copyright © 2020 All rights reserved<br>
+                    Powered & Written By Luyolo Magayana - Website builder
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<!--THE END!-->
