@@ -166,8 +166,70 @@
             <div class="picture">
                 <br>
                 <p style="text-align: center; color: #707070;">
-                    <img src="images/Saskia and I.jpg" alt="About ME Photo" width="400px" height="200px"><br>
-                    <br>
+                <!--THIS DIV BOX IS THE CREATION OF THE SLIDESHOW CONTAINING MY PICTURES.-->
+                <div class="slideshow-container">
+                    <!--EACH PICTURE HAS ITS OWN DIV BOX.-->
+                    <div class="mySlides fade">
+                        <div class="number-text">1 / 8</div>
+                        <img src="images\Luyolo1.JPG" width="400px" height="230px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">2 / 8</div>
+                        <img src="images\Luyolo2.JPG" width="400px" height="230px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">3 / 8</div>
+                        <img src="images\Luyolo3.JPG" width="400px" height="230px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">4 / 8</div>
+                        <img src="images\Luyolo4.JPG" width="400px" height="230px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">5 / 8</div>
+                        <img src="images\Luyolo5.JPG" width="400px" height="230px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">6 / 8</div>
+                        <img src="images\Luyolo6.JPG" width="400px" height="230px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">7 / 8</div>
+                        <img src="images\Luyolo7.JPG" width="400px" height="230px">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">8 / 8</div>
+                        <img src="images\Luyolo8.JPG" width="400px" height="230px">
+                    </div>
+
+                    <!--THE CODE BELOW IS THE JAVASCRIPT CODE THAT ENHANCES THE DISPLAY OF THE SLIDESHOW.-->
+                    <script>
+                        var slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}
+                        slides[slideIndex-1].style.display = "block";
+                        setTimeout(showSlides, 4000); // Change image every 4 seconds
+                        }
+                    </script>
+                </div>
+                <br>
+                    
+                <p style="text-align: center; color:#707070">
                     <strong>BIO</strong><br>
                     My name is Luyolo Magayana, and I'm a Software Engineer Intern at<br>
                     Younglings. My ultimate goal is to become a Senior Developer.<br>
