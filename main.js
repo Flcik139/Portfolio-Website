@@ -1,18 +1,18 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "AIzaSyBd9qLyxQ0Xu73nUs35JP_Mqr0ZMaolBTU",
-  authDomain: "project-magayana.firebaseapp.com",
-  databaseURL: "https://project-magayana.firebaseio.com",
-  projectId: "project-magayana",
-  storageBucket: "project-magayana.appspot.com",
-  messagingSenderId: "911147247049",
-  appId: "1:911147247049:web:22ff762d8482b9f1eff418",
-  measurementId: "G-9C2VC4X6XH"
-};
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBd9qLyxQ0Xu73nUs35JP_Mqr0ZMaolBTU",
+    authDomain: "project-magayana.firebaseapp.com",
+    databaseURL: "https://project-magayana.firebaseio.com",
+    projectId: "project-magayana",
+    storageBucket: "project-magayana.appspot.com",
+    messagingSenderId: "911147247049",
+    appId: "1:911147247049:web:22ff762d8482b9f1eff418",
+    measurementId: "G-9C2VC4X6XH"
+  };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  
+
   // Reference messages collection
   var messagesRef = firebase.database().ref('messages');
   
