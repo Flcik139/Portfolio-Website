@@ -32,8 +32,9 @@
     saveMessage(name, email, message);
   
   
-    // Clear form
+    // Clear form and Recaptcha
     document.getElementById('contact-Form').reset();
+    document.getElementById('g-recaptcha').reset();
   }
   
   // Function to get get form values
