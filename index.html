@@ -4,20 +4,11 @@
 <html id="home">
 <head>
     <meta charset="UTF-8">
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--GOOGLE RECAPTCHA LINK.-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
     <!--LINK CSS FILE.-->
     <link rel="stylesheet" href="style.css">
-    <!--SCRIPT FILE FOR CONTACT FORM-->
-    <script src="main.js"></script>
-
     <title>Portfolio Magayana</title>
 </head>
 
@@ -74,20 +65,20 @@
                         give feedback or contact me when wishing to do so. Please fill in the form and<br>
                         give your feedback in the space provided.</h4><br>
                         <!--THE FORMMETHOD ATTRIBUTE DEFINES THE HTTP METHOD FORM-DATA TO THE ACTION URL.-->
-                        <form id="form" action="https://formspree.io/moqdrnja" method="POST">
+                        <form id="contact-Form"  method="POST">
                             <label>
                                 Full Name:<br>
-                                <input type="text" name="name" cols="70" style="text-align: center;" focus><br><br>
+                                <input id="name" type="text" name="name" cols="70" style="text-align: center;" focus><br><br>
                             </label>
 
                             <label>
                                 Your Email:<br>
-                                <input type="text" name="email" style="text-align: center;" required><br><br>
+                                <input id="email" type="text" name="email" style="text-align: center;" required><br><br>
                             </label>
 
                             <label>
                                 Message:<br>
-                                <textarea name="message" cols="70" rows="8" style="text-align: center;"></textarea><br><br>
+                                <textarea id="message" name="message" cols="70" rows="8" style="text-align: center;"></textarea><br><br>
                             </label>
 
                             <div class="g-recaptcha" data-sitekey="6Lf9wdcUAAAAANneaN_SCIpsjMdoz2wsbq7DD3yz"></div>
@@ -327,6 +318,10 @@
             </div>
         </div>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase.js"></script>
+    <!--SCRIPT FILE FOR CONTACT FORM-->
+    <script src="main.js"></script>
 </body>
 </html>
 <!--THE END!-->
